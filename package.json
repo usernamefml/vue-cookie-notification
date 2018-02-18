@@ -1,0 +1,26 @@
+{
+  "name": "vue-cookie-notification",
+  "version": "0.0.1",
+  "description": "Vue eu cookie law notification",
+  "main": "cookie.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidwroche/vue-cookie-notification.git"
+  },
+  "keywords": [
+    "vue",
+    "js",
+    "cookie",
+    "notification",
+    "component"
+  ],
+  "author": "David Roche",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidwroche/vue-cookie-notification/issues"
+  },
+  "homepage": "https://github.com/davidwroche/vue-cookie-notification#readme"
+}
