@@ -1,6 +1,5 @@
 <snippet>
-  <content><![CDATA[
-# ${1:Project Name}
+  <content>
 
 Vue js cookie notification component.
 
@@ -12,6 +11,6 @@ npm install vue-cookie-notification
 
 TODO: Write usage instructions
 
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
