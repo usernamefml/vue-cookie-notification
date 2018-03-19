@@ -1,7 +1,7 @@
 <template>
 <div>
 <div id ="vue_cookie_privacy" v-if="cookie != true" v-cloak>
-     <span>
+     <span v-bind:class="{ 'a': isA, 'b': isB,'c': isC,'d': isD,'e': isE,'f': isF }">
         In order to give you the best experience, our website uses cookies. By continuing to use this site, you agree to our use of cookies.
         <button class="cookiebutton" v-on:click="accept_cookie">Accept</button>
      </span>
@@ -12,10 +12,23 @@
 <script>
 export default {
     name: 'VueCookie',
+    props: ['cookie-settings'],
     data: function() {
         return {
-            data: "star rating"
+            data: "star rating",
+             isA: true,
+             isB: false,
+             isC: false,
+             isD: false,
+             isE: false,
+             isF: false,
+             cookie: false
         }
+    },
+    method: {
+      accept_cookie: function (){
+        alert('Accept Cookie')
+      }
     }
 }
 </script>
@@ -25,6 +38,17 @@ export default {
   display: none;
 }
 
+.c{
+  color:green;
+}
+
+.a{
+  background-color: violet;
+}
+
+.b{
+  background-color: red
+}
 
 #vue_cookie_privacy {
   position: fixed;
