@@ -1,9 +1,9 @@
 <template>
 <div>
-<div id ="vue_cookie_privacy" v-if="cookie != true" v-cloak>
-     <span v-bind:class="{ 'a': isA, 'b': isB,'c': isC,'d': isD,'e': isE,'f': isF }">
-        {{cookietext}}
-        <button class="cookiebutton" v-on:click="accept_cookie">{{cookiebutton}}</button>
+<div id ="vue_cookie_privacy" v-bind:style="{backgroundColor:backcolor}" v-if="cookie != true" v-cloak>
+     <span v-bind:style="{ color: textcolor, fontSize: textsize }">
+        {{text}}
+        <button class="cookiebutton" v-on:click="accept_cookie">{{button}}</button>
      </span>
    </div>
 </div>
@@ -12,17 +12,14 @@
 <script>
 export default {
     name: 'VueCookie',
-    props: ['cookietext','cookiebutton'],
+    props: ['cookietext','cookiebutton','cookietextcolor','cookietextsize','cookiebackgroundcolor'],
     data: function() {
         return {
-            data: "star rating",
-             isA: false,
-             isB: false,
-             isC: false,
-             isD: false,
-             isE: false,
-             isF: false,
-             cookie: false
+             text: this.cookietext,
+             button: this.cookiebutton,
+             textcolor: this.cookietextcolor,
+             textsize: this.cookietextsize,
+             backcolor: this.cookiebackgroundcolor
         }
     },
     method: {
@@ -43,20 +40,17 @@ export default {
 }
 
 .a{
-  background-color: violet;
+  color: violet;
 }
 
 .b{
-  background-color: red
+  color: red
 }
 
 #vue_cookie_privacy {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #e8e8e8;
-  color: #333333;
-  font-size: 14px;
   text-align: center;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.42857143;
