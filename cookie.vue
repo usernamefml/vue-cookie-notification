@@ -2,8 +2,8 @@
 <div>
 <div id ="vue_cookie_privacy" v-if="cookie != true" v-cloak>
      <span v-bind:class="{ 'a': isA, 'b': isB,'c': isC,'d': isD,'e': isE,'f': isF }">
-        In order to give you the best experience, our website uses cookies. By continuing to use this site, you agree to our use of cookies.
-        <button class="cookiebutton" v-on:click="accept_cookie">Accept</button>
+        {{cookietext}}
+        <button class="cookiebutton" v-on:click="accept_cookie">{{cookiebutton}}</button>
      </span>
    </div>
 </div>
@@ -12,11 +12,11 @@
 <script>
 export default {
     name: 'VueCookie',
-    props: ['cookie-settings'],
+    props: ['cookietext','cookiebutton'],
     data: function() {
         return {
             data: "star rating",
-             isA: true,
+             isA: false,
              isB: false,
              isC: false,
              isD: false,

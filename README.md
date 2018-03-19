@@ -1,7 +1,7 @@
 <snippet>
   <content>
 
-Vue js cookie notification component.
+## Vue js cookie component.
 
 ![Alt text](cookie-notice.png?raw=true "Title")
 
@@ -10,12 +10,15 @@ Vue js cookie notification component.
 
 npm install vue-cookie-notification
 
-## Usage
+## How to Use
+![Alt text](setup1.png?raw=true "Title")
 
-TODO: Write usage instructions
-TODO: Add some functionality
+##TODO
+<br>
+Add cookie set & get functionality on click 
+<br>
+Add custom colors etc to background & button
 
 
 </content>
-  <tabTrigger>readme</tabTrigger>
 </snippet>
