@@ -28,7 +28,7 @@ install vue-cookie-notification
 <template>
   <div id="app">
     <cookie :cookietext="cookietext" :cookiebutton="cookiebutton" :cookietextcolor="cookietextcolor"
-    :cookietextsize="cookietextsize" :cookiebackgroundcolor="cookiebackgroundcolor" ></cookie>
+    :cookietextsize="cookietextsize" :cookiebackgroundcolor="cookiebackgroundcolor" :cookiename="cookiename" :cookievalue="cookievalue" :cookieexdays="cookieexdays" ></cookie>
   </div>
 </template>
 ```
@@ -48,7 +48,12 @@ export default {
       cookiebutton:'feed me',
       cookietextcolor:'green',
       cookietextsize:'20px',
-      cookiebackgroundcolor:'orange'
+      cookiebackgroundcolor:'orange',
+      cookiename:'VUECOOKIE',
+      cookievalue:'12345',
+      cookieexdays:365,
+
+
     }
   }
 }
