@@ -22,7 +22,7 @@ export default {
              backcolor: this.cookiebackgroundcolor
         }
     },
-    method: {
+    methods: {
       accept_cookie: function (){
         alert('Accept Cookie')
       }
