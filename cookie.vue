@@ -1,9 +1,9 @@
 <template>
 <div>
-<div id ="vue_cookie_privacy" v-bind:style="{backgroundColor:backcolor}" v-if="cookie != true" v-cloak>
+<div id ="vue_cookie_privacy" v-bind:style="{backgroundColor:backcolor}" v-cloak>
      <span v-bind:style="{ color: textcolor, fontSize: textsize }">
         {{text}}
-        <button class="cookiebutton" v-on:click="accept_cookie">{{button}}</button>
+        <button class="cookiebutton" v-on:click="accept_cookie()">{{button}}</button>
      </span>
    </div>
 </div>
